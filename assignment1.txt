@@ -1,0 +1,65 @@
+package first;
+
+	public static void main(String[] args) {
+		int a=10,b,c,d;
+		a+=3;
+		a++;
+		b=a++;
+		c=a+b;
+		System.out.println(a>b);
+		System.out.println((a<b)&&(b>c));
+		System.out.println(a|b|c);
+		d=(a>b)?5:10;
+		System.out.println(d);
+	}
+
+}
+
+
+
+
+package first;
+
+public class Unary {
+
+	public static void main(String[] args) {
+		int a,b,c,n;
+		a=2;
+		b=++a;
+		c=a++ + ++b;
+		n=a++ + ++a +b++ -c--;
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(n);
+				
+		
+	
+
+	}
+
+}
+
+
+
+package first;
+
+import java.util.Scanner;
+
+public class Bitwise {
+
+	public static void main(String[] args) {
+		int x,y,z;
+		System.out.println("Enter x,y,z values:");
+		Scanner sc= new Scanner(System.in);
+		x=sc.nextInt();
+		y=sc.nextInt();
+		z=sc.nextInt();
+		System.out.println(x&y&z);
+		System.out.println(x|y|z);
+		System.out.println(x^y^z);
+		System.out.println(x<<y>>z);
+		
+	}
+}
+	
