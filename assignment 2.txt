@@ -1,0 +1,257 @@
+package banking;
+
+import java.util.Scanner;
+
+public class Ifdemo1 {
+
+	public static void main(String[] args) {
+		// if demo
+		int n;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		if(n==0)
+		{
+			System.out.println("yes it is zero");
+		}
+		else
+		{
+			System.out.println("no it is not zero");
+		}
+
+	}
+
+}
+
+package banking;
+
+import java.util.Scanner;
+
+public class Ifdemo2 {
+
+	public static void main(String[] args) {
+		// if demo
+		int n;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		if(n==0)
+		{
+			System.out.println("yes it is zero");
+		}
+		else if(n>0)
+		{
+			System.out.println("it is +ve number");
+		}
+		else if(n<0)
+		{
+			System.out.println("it is -ve number");
+		}
+
+	}
+
+}
+package banking;
+
+import java.util.Scanner;
+
+public class Ifdemo3 {
+
+	public static void main(String[] args) {
+		// biggest of 3 numbers 10,20,30
+		int a,b,c;
+		System.out.println("enter 3 numbers");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		if(a>b && a>c)
+		{
+			System.out.println(a+" is biggest");
+		}
+		else if(b>a && b>c)
+		{
+			System.out.println(b+" is biggest");
+		}
+		else
+		{
+			System.out.println(c+" is biggest");
+		}
+
+	}
+
+}
+package banking;
+
+import java.util.Scanner;
+
+public class Ifdemo4 {
+
+	public static void main(String[] args) {
+		//char conditions
+		String ch;
+		Scanner sc=new Scanner(System.in);
+		ch=sc.next();//abc
+		if(ch.charAt(0)=='a')
+		{
+			System.out.println("apple");
+		}
+		else if(ch.charAt(0)=='b')
+		{
+			System.out.println("banana");
+		}
+		else if(ch.charAt(0)=='c')
+		{
+			System.out.println("cherry");
+		}
+		else
+		{
+			System.out.println("other fruit");
+		}
+	
+	
+		
+
+	}
+
+}
+
+package banking;
+
+import java.util.Scanner;
+
+public class Nestedif {
+
+	public static void main(String[] args) {
+		// nested..if
+		int n;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		if(n<=100) //outer if
+		{
+			System.out.println("it is below 100 ");
+			if(n<=95) //inner if
+			{
+				System.out.println("it is below 95");
+			}
+			else
+			{
+				System.out.println("it is above 95");
+			}
+		}
+		else
+		{ System.out.println("it is above 100"); }
+
+	}
+
+}
+package banking;
+
+import java.util.Scanner;
+
+public class Switchdemo1 {
+
+	public static void main(String[] args) {
+		// switch case
+		int ch,a,b,c;
+		System.out.println("enter a,b");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		System.out.println("1)addition");
+		System.out.println("2)subtraction");
+		System.out.println("3)multplication");
+		System.out.println("4)divison");
+		System.out.println("enter choice");
+		ch=sc.nextInt();
+		switch(ch)
+		{
+		case 1:c=a+b;
+		       break;
+		case 2:c=a-b;
+		      break;
+		case 3:c=a*b;
+		       break;
+		case 4:c=a/b;
+		      break;
+		default:c=0;
+		      System.out.println("invalid choice");
+		}
+		System.out.println(c);
+
+	}
+
+}
+package banking;
+
+import java.util.Scanner;
+
+public class Switchdemo2 {
+
+	public static void main(String[] args) {
+		// string choice
+		String group;
+		System.out.println("enter group");
+		Scanner sc=new Scanner(System.in);
+		group=sc.next();
+		switch(group)
+		{
+		case "it":System.out.println("coding...");
+		         break;
+		case "ece":System.out.println("electroic enginner");
+		           break;
+		case "civil":System.out.println("design architect");
+		          break;
+		   default:System.out.println("invalid group");
+		}
+		
+
+	}
+
+}
+
+
+
+4)package Demo;
+
+public class NestedIf {
+
+	public static void main(String[] args) {
+		for (int i=1; i<=4; i++)
+		{
+			for (int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+				
+			}
+		System.out.println();
+		}
+	}
+	
+
+
+	}
+
+
+5)
+
+package Demo;
+
+public class Odd {
+
+	public static void main(String[] args) {
+		int n=1;
+		while(n<20)
+		{
+			System.out.println(n+" ");
+			n=n+2;
+		}
+					
+					
+		}
+
+	}
+
+
+
+
+ 
